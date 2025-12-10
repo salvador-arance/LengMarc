@@ -1,0 +1,135 @@
+<!--
+    * REVISA LA ESTRUCTURA BÁSICA HTML5
+    * -[x] IMPORTA UNA FUENTE Y ÚSALA EN TODO EL DOCUMENTO
+    * -[x] REEMPLAZA LOS FIELDSET DEL FORMULARIO POR ETIQUETAS LABEL
+    * -[x] CREA 2 CARPETAS JUNTO CON EL FICHERO .HTML, IMG Y STYLE, PARA IMÁGENES Y CSS
+    * -[x] AÑADE UN FAVICON
+    * -[x] HAZ QUE EL MOVIMIENTO DE SCROLL DE LA PÁGINA SEA "SUAVE"
+    * -[x] EN EL "HOVER" DEL MENÚ, CAMBIA EL ESTILO DEL ENLACE (SUBRAYADO)
+    * -[x] EN EL "HOVER" DE LAS IMÁGENES, CAMBIA EL ESTILO DEL CURSOR
+    * -[x] EL FOOTER TIENE UN FONDO DEGRADADO    
+    * 
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Turismo en Ciudades Icónicas</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/paris.jpg" type="image/x-icon">
+</head>
+<body>
+    <div id="banner">
+        <h1>Explora Ciudades Icónicas</h1>
+    </div>
+    <header>
+        <div id="subbanner">
+            <h2>Ciudades Icónicas</h2>
+            <nav id="navbanner">
+                <ul>
+                    <li>
+                        <a href="#paris-ciudad">París</a>
+                    </li>
+                    <li>
+                        <a href="#tokyo-ciudad">Tokio</a>
+                    </li>
+                    <li>
+                        <a href="#newyork-ciudad">Nueva York</a>
+                    </li>
+                    <li>
+                        <a href="#form-section">Formulario</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="paris-ciudad" class="city-section">
+            <h3>París</h3>
+            <p>París es conocida como la ciudad del amor. Su atracción más icónica es la Torre Eiffel.</p>
+            <img src="./img/paris.jpg" alt="Vista de la Torre Eiffel" class="city-image" width="300">
+        </section>
+
+        <section id="tokyo-ciudad" class="city-section">
+            <h3>Tokio</h3>
+            <p>Tokio combina tecnología avanzada con tradiciones antiguas. Es famosa por su Torre de Tokio y el cruce de Shibuya.</p>
+            <img src="./img/tokyo.jpg" alt="Vista de Tokio" class="city-image" width="300">
+        </section>
+
+        <section id="newyork-ciudad" class="city-section">
+            <h3>Nueva York</h3>
+            <p>La ciudad que nunca duerme. Entre sus lugares destacados están Times Square y la Estatua de la Libertad.</p>
+            <img src="./img/newyork.jpg" alt="Vista de Nueva York" class="city-image" width="300">
+        </section>
+
+        <section id="form-section">
+            <h3>Formulario</h3>
+            <form action="procesar_formulario.php" method="post">
+                        <label>Nombre*:
+                            <input type="text" id="nombre" name="nombre" required>
+                        </label>
+                        <br><br>
+
+
+
+
+                        <input type="radio" id="paris" name="ciudad" value="paris">
+                        <label for="paris">Paris</label><br>
+
+                        <input type="radio" id="tokio" name="ciudad" value="tokio">
+                        <label for="tokio">Tokio</label><br>
+
+                        <input type="radio" id="nuevayork" name="ciudad" value="ny">
+                        <label for="nuevayork">Nueva York</label>
+                        <br><br>
+
+                        <input type="checkbox" id="arte" name="intereses" value="arte">
+                        <label for="arte">Arte</label><br>
+
+                        <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+                        <label for="tecnologia">Tecnología</label><br>
+
+                        <input type="checkbox" id="comida" name="intereses" value="comida">
+                        <label for="comida">Comida</label>
+                        <br><br>
+
+                        <label for="comentarios">Comentarios:</label><br>
+                        <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea>
+                        <br><br>
+
+                        <label for="viajar">¿Te gusta viajar?</label>
+                        <select id="viajar" name="viajar">
+                            <option value="excelente">Me apasiona</option>
+                            <option value="buena">Bastante</option>
+                            <option value="regular">No mucho</option>
+                            <option value="mala">No</option>
+                        </select>
+                        <br><br>
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hecho con amor por apasionados del turismo.</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                </li>
+            </ul>
+        </nav>
+        <p class="small">&copy; 2024 - Turismo en Ciudades Icónicas</p>
+    </footer>
+</body>
+</html>

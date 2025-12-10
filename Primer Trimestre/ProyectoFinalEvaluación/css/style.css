@@ -1,0 +1,259 @@
+
+:root {
+    --fondo-principal: #0f0f12;
+    --fondo-secundario: #1a1a20;
+    --texto-principal: #e6e6e6;
+    --texto-secundario: #b3b3b3;
+    --acento1: #b33a3a;
+    --acento2: #2e5a88;
+    --acento3: #d8c8a8;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--fondo-principal);
+    color: var(--texto-principal);
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+    padding: 2rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    margin: 1em 0 0.5em;
+}
+
+h1, h2 {
+    color: var(--acento1);
+}
+
+h3, h4 {
+    color: var(--acento3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--acento3);
+    padding-bottom: 1rem;
+}
+
+nav ul {
+    font-size: large;
+    background-color: var(--fondo-secundario);
+    padding: 1rem;
+    border-radius: 5px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    border: var(--acento3) 1px solid;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: var(--fondo-secundario);
+    padding: 10px;
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+nav a {
+    color: var(--texto-principal);
+    text-decoration: none;
+    transition: color 0.3s;
+    transition: text-shadow 0.4s;
+}
+
+nav a:hover {
+    color: var(--acento3);
+    text-shadow: 1px 1px 2px #dd5d5d ;
+}
+
+
+section {
+    background-color: var(--fondo-secundario);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--acento3);
+}
+
+section a {
+    color: var(--acento3);
+    text-decoration: underline;
+}
+
+section a:hover {
+    color: #dfbe7c;
+}
+
+section a:visited {
+    color: #b3b3b3;
+}
+
+section p {
+    text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid var(--acento3);
+}
+
+th {
+    background-color: var(--fondo-principal);
+    color: var(--acento1);
+}
+
+img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
+
+figure {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+figcaption {
+    color: var(--texto-secundario);
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.bold {
+    color:var(--acento3);
+    font-weight: bold;
+}
+
+a .bold {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+a .bold:hover {
+    color: #dfbe7c;
+}
+
+.small {
+    font-size: smaller;
+    font-style: italic;
+}
+
+details summary {
+    cursor: pointer;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check input {
+    width: auto;
+}
+
+.video-embed {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    margin: 15px 0;
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.film-form {
+    background-color: var(--fondo-principal);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: var(--fondo-secundario);
+    border: 1px solid var(--acento3);
+    color: var(--texto-principal);
+}
+
+button {
+    background-color: var(--acento2);
+    color: var(--texto-principal);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--acento1);
+}
+
+#Estilo img {
+    max-width: 70%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid var(--acento3);
+    color: var(--texto-secundario);
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--acento1);
+}
+
+footer a:hover {
+    color: #dd5d5d;
+}

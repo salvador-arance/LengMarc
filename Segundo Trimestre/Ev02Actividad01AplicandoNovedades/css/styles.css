@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Stack Sans Text";
+    scroll-behavior: smooth;
+}
+
+#banner {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    color:#4e4e4e;
+    text-align: center;
+    padding: 4rem;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 100px;
+}
+
+#subbanner {
+    background-color: #333;
+    color: white;
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: large;
+    padding-left: 0;
+}
+
+#navbanner ul {
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;  
+    color: white;
+    font-size: small;
+}
+
+a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+
+
+section {
+    margin: auto;
+    padding-top: 100px;
+    width: 90%;
+}
+
+section h3 {
+    margin-bottom: 2%;
+}
+
+section img {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: transform 0.3s ease;
+}
+
+section img:hover {
+    cursor: copy;
+    transform: scale(1.05);
+}
+
+.city-section {
+    border-bottom: #6c6c6c solid 1px;
+}
+
+
+form {
+    margin-bottom: 1rem;
+}
+
+form p {
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.5vw;
+    margin-right: 1rem;
+}
+
+button:hover {
+    cursor:pointer;
+}
+
+
+footer {
+    background: linear-gradient(45deg, #333, #555); 
+    padding: 20px;  
+    color:aliceblue;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.small {
+    font-size: small;
+}

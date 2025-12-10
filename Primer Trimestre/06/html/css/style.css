@@ -1,0 +1,43 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    color: red;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    border: 2px blue solid;
+    padding: 20px;
+}
+
+thead {
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+}
+
+tbody {
+    font-size: smaller;
+}
+
+tfoot td{
+    font-size: smaller;
+}
+
+.underline {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.marcado {
+    font-size: larger;
+    font-weight: bold;
+    color: red;
+}
