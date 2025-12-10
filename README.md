@@ -1,2 +1,2 @@
 # Lenguajes de Marcas
-Aquí están todos los proyectos de lenguajes de marcas en los que iré trabajando durante el curso.
+Este repositorio es el lugar donde almacenaré todos los proyectos en los que trabajaré durante el curso en el módulo.
