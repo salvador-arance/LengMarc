@@ -1,184 +1,251 @@
-<!doctype html>
-<html lang="eS">
+<!DOCTYPE html>
+<html lang="es">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAMApp - Gestor de Estudios</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DAMApp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="#Inicio"> Inicio </a>
-
-          <a class="navbar-item" href="#Funciones"> Funciones </a>
-
-          <a class="navbar-item" href="#Contacto"> Contacto </a>
+    <nav
+      class="navbar is-fixed-top is-white has-shadow"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <strong>DAMApp</strong>
+          </a>
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navMenu"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a class="button is-light"> Log in </a>
-            </div>
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="#Inicio">Inicio</a>
+            <a class="navbar-item" href="#Funciones">Funciones</a>
+            <a class="navbar-item" href="#Contacto">Contacto</a>
           </div>
         </div>
       </div>
     </nav>
-    <section class="hero" id="Inicio">
+
+    <section class="hero is-primary is-fullheight" id="Inicio">
       <div class="hero-body">
-        <p class="title">DAMApp</p>
-        <p class="subtitle">
-          Organiza tus estudios y proyectos de la forma más cómoda.
-        </p>
+        <div class="container has-text-centered">
+          <p class="title is-1">DAMApp</p>
+          <p class="subtitle is-3">
+            Organiza tus estudios y proyectos de la forma más cómoda.
+          </p>
+        </div>
       </div>
     </section>
-    <div class="container">
-      <div class="notification is-primary">
-        <section class="section">
-          <h1 class="title">¿Qué es DAMApp?</h1>
-          <button class="button is-primary is-dark">Empezar</button>
-          <button class="button is-info">Ver funciones</button>
-        </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="notification is-link is-light">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <h1 class="title">¿Qué es DAMApp?</h1>
+              <p>
+                Una herramienta diseñada para estudiantes que buscan optimizar
+                su tiempo.
+              </p>
+            </div>
+            <div class="column is-narrow">
+              <div class="buttons">
+                <button class="button is-primary">Empezar</button>
+                <button class="button is-info is-light">Ver funciones</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
     <section class="section" id="Funciones">
-      <h1 class="title">Funciones</h1>
-      <div class="columns">
-        <div class="column">
-          <div class="card">
-            <header class="card-header">
-              <p class="card-header-title">Planificador semanal</p>
-              <button class="card-header-icon" aria-label="more options">
-                <span class="icon">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-              </button>
-            </header>
-            <div class="content">
-              Tu semana bajo control. Planifica tus actividades de lunes a
-              domingo y distribuye tu carga de trabajo de manera inteligente.
+      <div class="container">
+        <h2 class="title has-text-centered">Funciones</h2>
+        <div class="columns">
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">Planificador semanal</p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  Tu semana bajo control. Planifica tus actividades de lunes a
+                  domingo y distribuye tu carga de trabajo.
+                </div>
+              </div>
+              <footer class="card-footer">
+                <button class="card-footer-item button is-ghost">Probar</button>
+              </footer>
             </div>
-            <button class="button is-primary is-dark">Probar</button>
           </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <header class="card-header">
-              <p class="card-header-title">Checklist de entregas</p>
-              <button class="card-header-icon" aria-label="more options">
-                <span class="icon">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-              </button>
-            </header>
-            <div class="content">
-              Control total sobre tus tareas pendientes. Visualiza tus próximas
-              entregas y prioriza lo más urgente para cumplir siempre a tiempo.
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">Checklist de entregas</p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  Control total sobre tus tareas pendientes. Visualiza tus
+                  próximas entregas y prioriza lo más urgente.
+                </div>
+              </div>
+              <footer class="card-footer">
+                <button class="card-footer-item button is-ghost">Probar</button>
+              </footer>
             </div>
-            <button class="button is-primary is-dark">Probar</button>
           </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <header class="card-header">
-              <p class="card-header-title">Modo estudio Pomodoro</p>
-              <button class="card-header-icon" aria-label="more options">
-                <span class="icon">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-              </button>
-            </header>
-            <div class="content">
-              Gestiona tu tiempo con la técnica Pomodoro. Establece intervalos
-              de enfoque total y mejora tu rendimiento académico sin
-              distracciones.
+          <div class="column">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">Modo estudio Pomodoro</p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  Gestiona tu tiempo con la técnica Pomodoro. Establece
+                  intervalos de enfoque total y mejora tu rendimiento.
+                </div>
+              </div>
+              <footer class="card-footer">
+                <button class="card-footer-item button is-ghost">Probar</button>
+              </footer>
             </div>
-            <button class="button is-primary is-dark">Probar</button>
           </div>
         </div>
       </div>
     </section>
+
     <section class="section" id="Contacto">
-      <h1 class="title">Contacto</h1>
-      <div class="notification">
-        <button class="delete"></button>
-        Te responderemos en 24/48 horas.
-      </div>
-      <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="e.g Alex Smith" />
-        </div>
-      </div>
+      <div class="container">
+        <h2 class="title">Contacto</h2>
 
-      <div class="field">
-        <label class="label">Email</label>
-        <div class="control">
-          <input
-            class="input"
-            type="email"
-            placeholder="e.g. alexsmith@gmail.com"
-          />
+        <div class="notification is-warning is-light">
+          <button class="delete"></button>
+          Te responderemos en <strong>24/48 horas</strong>.
         </div>
-      </div>
 
-      <div class="field">
-        <label class="label">Asunto</label>
-        <div class="control">
-          <div class="select">
-            <select>
-              <option>Select dropdown</option>
-              <option>With options</option>
-            </select>
+        <div class="box">
+          <div class="field">
+            <label class="label">Nombre</label>
+            <div class="control has-icons-left">
+              <input class="input" type="text" placeholder="Ej. Alex Smith" />
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left">
+              <input
+                class="input"
+                type="email"
+                placeholder="alexsmith@gmail.com"
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Asunto</label>
+            <div class="control">
+              <div class="select is-fullwidth">
+                <select>
+                  <option>Soporte técnico</option>
+                  <option>Sugerencias</option>
+                  <option>Otros</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Mensaje</label>
+            <div class="control">
+              <textarea
+                class="textarea"
+                placeholder="Escribe aquí..."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox" /> Estoy de acuerdo con los
+                <a href="#">términos y condiciones.</a>
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">¿Eres estudiante?</label>
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="student" checked /> Sí
+              </label>
+              <label class="radio">
+                <input type="radio" name="student" /> No
+              </label>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link">Enviar Mensaje</button>
+            </div>
+            <div class="control">
+              <button class="button is-link is-light">Cancelar</button>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="field">
-        <label class="label">Mensaje</label>
-        <div class="control">
-          <textarea class="textarea" placeholder="Textarea"></textarea>
-        </div>
-      </div>
-
-      <div class="field">
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox" />
-            Estoy de acuerdo con los <a href="#">términos y condiciones.</a>
-          </label>
-        </div>
-      </div>
-
-      <div class="field">
-        <div class="control">
-          <label class="radio">
-            <input type="radio" name="question" />
-            Sí
-          </label>
-          <label class="radio">
-            <input type="radio" name="question" />
-            No
-          </label>
-        </div>
-      </div>
-
-      <div class="field is-grouped">
-        <div class="control">
-          <button class="button is-link">Enviar</button>
-        </div>
-        <div class="control">
-          <button class="button is-link is-light">Cancelar</button>
-        </div>
-      </div>
     </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p><strong>DAMApp</strong> por Estudiantes de DAM. 2024.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
   </body>
 </html>

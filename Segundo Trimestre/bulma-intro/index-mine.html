@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href=./css/bulma.css />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAMApp</title>
+  </head>
+
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#Inicio"> Inicio </a>
+          <a class="navbar-item" href="#Funciones"> Funciones </a>
+          <a class="navbar-item" href="#Contacto"> Contacto </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-fullheight" id="Inicio">
+      <div class="hero-body">
+        <p class="title">DAMApp</p>
+        <p class="subtitle">
+          Organiza tus estudios y proyectos de la forma más cómoda.
+        </p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="notification is-primary">
+        <section class="section">
+          <h1 class="title">¿Qué es DAMApp?</h1>
+          <button class="button is-primary is-dark">Empezar</button>
+          <button class="button is-info">Ver funciones</button>
+        </section>
+      </div>
+    </div>
+    <section class="section" id="Funciones">
+      <h1 class="title">Funciones</h1>
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Planificador semanal</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="content">
+              Tu semana bajo control. Planifica tus actividades de lunes a
+              domingo y distribuye tu carga de trabajo de manera inteligente.
+            </div>
+            <button class="button is-primary is-dark">Probar</button>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Checklist de entregas</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="content">
+              Control total sobre tus tareas pendientes. Visualiza tus próximas
+              entregas y prioriza lo más urgente para cumplir siempre a tiempo.
+            </div>
+            <button class="button is-primary is-dark">Probar</button>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Modo estudio Pomodoro</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="content">
+              Gestiona tu tiempo con la técnica Pomodoro. Establece intervalos
+              de enfoque total y mejora tu rendimiento académico sin
+              distracciones.
+            </div>
+            <button class="button is-primary is-dark">Probar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="Contacto">
+      <h1 class="title">Contacto</h1>
+
+      <div class="notification">
+        <button class="delete"></button>
+        Te responderemos en 24/48 horas.
+      </div>
+
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="e.g Alex Smith" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input
+            class="input"
+            type="email"
+            placeholder="e.g. alexsmith@gmail.com"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Asunto</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Mensaje</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox" />
+            Estoy de acuerdo con los <a href="#">términos y condiciones.</a>
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="question" />
+            Sí
+          </label>
+          <label class="radio">
+            <input type="radio" name="question" />
+            No
+          </label>
+        </div>
+      </div>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">Enviar</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancelar</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
