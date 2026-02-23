@@ -1,0 +1,12 @@
+.navbar {
+    background-color: orange;
+    font-weight: bold;
+}
+
+.column:nth-child(2) .card:hover {
+    border: solid, rgb(255, 165, 0), 4px;
+}
+
+.bold {
+    font-weight: bold;
+}
