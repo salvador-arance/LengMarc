@@ -1,0 +1,36 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>innerHTML vs...</title>
+	</head>
+	<body>
+		<div id='etiquetas'>
+			En este párrafo veremos la funcionalidad de etiquetas HTML como       <code> a, ul, ol y li</code>
+			y otras ocultas como <span style="visibility: hidden;"> esto igual no sale! </span>
+		</div>
+
+	<script>
+		const parrafo = document.getElementById("etiquetas");
+		//const parrafo=document.querySelector("#etiquetas"); //equivalente con querySelector
+		
+		console.log("innerHTML: " + parrafo.innerHTML); 
+		//el string tal cual está en el fichero html (incluidas otras etiquetas html, espacios, saltos de línea, etc.)
+		//--> formato html. Mal uso, ALERTA SEGURIDAD!!! Cross-site scripting attack
+
+		console.log("innerText: " + parrafo.innerText); 
+		//el texto "plano", sin incluir nada de html ni espacios/saltos
+		//--> formato texto plano. Tiene en cuenta el css aplicado en el momenento de "coger" el contenido (p.ej. si está oculto).
+
+		console.log("textContent: " + parrafo.textContent); 
+		//"mezcla" de los dos anteriores: devuelve texto "plano" manteniendo espacios y saltos de línea. 
+		//NO tiene en cuenta el css ni etilos aplicados en el momenento de "coger" el contenido.
+
+		console.log("outerHTML: " + parrafo.outerHTML); 
+		// recoge el nodo como tal (etiqueta div en este caso) además de su contenido
+
+	//insertar sin reemplazar: https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
+	</script>
+	</body>
+</html>
+
