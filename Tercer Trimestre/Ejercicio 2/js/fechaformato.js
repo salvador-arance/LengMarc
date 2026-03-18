@@ -15,6 +15,10 @@ if (dia.length === 1) {
 strFecha = dia + '/' + mes + '/' + hoy.getFullYear();
 
 function mostrarFechaHora() {
+    document.getElementById('parrafoFecha').innerText = strFecha;
+    document.getElementById('parrafoHora').innerText = strHora;
+    document.getElementById('inputFecha').value = strFecha;
+    document.getElementById('inputHora').value = strHora;
     alert(strFecha);
     alert(strHora);
 }
